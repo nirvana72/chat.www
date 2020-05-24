@@ -1,0 +1,46 @@
+$border: 1px #e0e0e0 solid;
+
+html,
+body {
+  font-family: Helvetica, Tahoma, Arial, 'Microsoft YaHei', 'Hiragino Sans GB',
+    'WenQuanYi Micro Hei', sans-serif;
+  font-size: 14px;
+  overflow: auto;
+}
+
+// -----------------------------------------------------------------
+.nj-input-box {
+  padding: 0 20px;
+
+  .v-input {
+    padding-top: 4px;
+
+    .v-input__slot {
+      background-color: #fff;
+      border: $border;
+      border-radius: 5px;
+      height: 40px;
+
+      &::before {
+        border-color: #e0e0e0 !important;
+      }
+
+      .v-input__prepend-inner {
+        padding: 3px 5px 0 5px;
+      }
+
+      .v-text-field__slot {
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+.nj-button-box {
+  padding: 0 20px;
+
+  button {
+    height: 35px;
+    line-height: 35px;
+  }
+}
